@@ -7,10 +7,6 @@
   .slide1 div.shop {
     margin-bottom: 0;
   }
-  .slide1 .logo-text div.logo-button {
-    margin: auto;
-    margin-bottom: 56px;
-  }
 }
 
 @media (max-width: 880px) and (max-width: 767px) {
@@ -32,7 +28,7 @@
 }
 
 .slide1 .logo-text {
-  margin: 10px;
+  margin: 10px 100px 10px 10px;
 }
 
 .slide1 .logo-text p {
@@ -70,6 +66,47 @@
   width: 100%;
 }
 
+.slide2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide2 .slide2__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide2 .slide2__text .slide2__image-up {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 50px;
+}
+
+.slide2 .slide2__text .slide2__image-up img {
+  width: 100%;
+}
+
+.slide2 .slide2__text .slide2__content {
+  margin-top: 32px;
+  margin-left: 20px;
+}
+
+.slide2 .slide2__text .slide2__content .slide2__item {
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+
+.slide2 .slide2__text .slide2__content .slide2__item span {
+  color: #7C7E92;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -91,6 +128,9 @@ section {
 
 section:not(.back) {
   color: #252849;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
 
 .back {

@@ -6,34 +6,31 @@
     div.shop {
       margin-bottom:0;
       }  
-       @media (max-width:767px) {
+    @media (max-width:767px) {
       
-      .logo-text{
+      .logo-text {
 
-        div.logo-button{
+        div.logo-button {
           margin: auto;
           margin-bottom: 56px;
           width:311px;
           height: 56px;
         }
       }
-      @media (max-width:500px){
+      @media (max-width:500px) {
         div.shop {
          text-align: center;
-         img{
-          width:65%;
-         
-            }  
-          }
+          img {
+            width:65%;
+          
+          }  
         }
-      } 
-    }
-   
-    
-  }  
+      }
+    } 
+  }
 
   .logo-text {
-    margin:10px;
+    margin:10px 100px 10px 10px;
 
     p {
       font-size: 18px;

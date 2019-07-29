@@ -1,5 +1,5 @@
 @import "_slide1.scss";
-
+@import "_slide2.scss";
 
 * {
     padding:0;
@@ -7,6 +7,7 @@
 }
 
 $bg:linear-gradient(90deg, #6A56CA 0%, #21268C 100%);
+
 section {
     display: flex;
     justify-content: center;
@@ -15,20 +16,27 @@ section {
     width:100vw;   
     
 }
-section:not(.back){
+
+section:not(.back) {
     color: #252849;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
 }
+
 .back {
     background: $bg;  
     color: #fff; 
 }
-h1{
+
+h1 {
     font-weight: bold;
     font-size: 34px;
     line-height: 51px;
     letter-spacing: 0.25px;
     white-space: nowrap;
-    @media (max-width:500px){
+
+    @media (max-width:500px) {
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 0.15px;
