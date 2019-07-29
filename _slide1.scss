@@ -1,35 +1,65 @@
 .slide1 {
-    .logo-text{
-        margin:10px;
-        p{
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 0.5px;
-        margin: 18px 0 56px;
-        }
-        .logo-button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #FFFFFF;
-            box-shadow: 0px 8px 16px #312C94;
-            border-radius: 80px;
-            color:#5E4FC0;
-            width:196px;
-            height: 56px;
-        }
+
+  @media (max-width:880px) {
+    flex-wrap: wrap-reverse;  
+    height: 100%;
+    div.shop {
+      margin-bottom:0;
+      }   
     }
-    .shop{
-        margin: 10px 10px 100px;
-        img{
-            height: auto;
-            width: 100%
-        } 
+    @media (max-width:767px) {
+      
+      .logo-text{
+
+        div.logo-button{
+          margin: auto;
+          margin-bottom: 56px;
+          width:311px;
+          height: 56px;
+        }
+      }
+      @media (max-width:500px){
+        div.shop {
+         text-align: center;
+         img{
+          width:65%;
+         
+         }
+        }
+      }
     }
     
-}
-@media (max-width:880px){
-    .slide1{
-        flex-wrap: wrap-reverse;
-    }        
+  }  
+
+  .logo-text {
+    margin:10px;
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      margin: 18px 0 56px;
+    }
+
+    .logo-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 16px #312C94;
+      border-radius: 80px;
+      color:#5E4FC0;
+      width:196px;
+      height: 56px;
+    }
+  }
+
+  .shop {
+    margin: 10px 10px 100px;
+
+    img {
+      height: auto;
+      width: 100%
+    } 
+  }
 }
