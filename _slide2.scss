@@ -20,7 +20,7 @@
         margin-left: -50px;
 
         @media (max-width:$mobileSmall) {
-          margin-left:10px;
+          margin-left: 10px;
         }
       }
     }
@@ -62,6 +62,7 @@
         @media (max-width:$desktopSmaller) {
           margin: 0;
           margin-bottom: 40px;
+          margin-top: 100px;
 
         }
       }
