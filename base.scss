@@ -1,3 +1,4 @@
+@import "variables";
 @import "_slide1.scss";
 @import "_slide2.scss";
 
@@ -8,38 +9,48 @@
 
 $bg:linear-gradient(90deg, #6A56CA 0%, #21268C 100%);
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width:100vw;   
-    
-}
+body {
 
-section:not(.back) {
-    color: #252849;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-}
+  section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      max-width:100vw; 
+      padding:80px 40px;
 
-.back {
-    background: $bg;  
-    color: #fff; 
-}
+      @media (max-width:$mobileSmall) {
+        padding: 40px 10px;
+      }
 
-h1 {
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 51px;
-    letter-spacing: 0.25px;
-    white-space: nowrap;
+      section:not(.back) {
+        color: #252849;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+      }
+  }
 
-    @media (max-width:500px) {
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: 0.15px;
+  
 
-    }
+  .back {
+      background: $bg;  
+      color: #fff; 
+  }
+
+  h1 {
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 51px;
+      letter-spacing: 0.25px;
+      white-space: nowrap;
+
+      @media (max-width:500px) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+
+      }
+  }
+  
 }

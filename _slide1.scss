@@ -1,36 +1,13 @@
 .slide1 {
 
-  @media (max-width:880px) {
+  @media (max-width:$tablet) {
     flex-wrap: wrap-reverse;  
     height: 100%;
-    div.shop {
-      margin-bottom:0;
-      }  
-    @media (max-width:767px) {
-      
-      .logo-text {
-
-        div.logo-button {
-          margin: auto;
-          margin-bottom: 56px;
-          width:311px;
-          height: 56px;
-        }
-      }
-      @media (max-width:500px) {
-        div.shop {
-         text-align: center;
-          img {
-            width:65%;
-          
-          }  
-        }
-      }
-    } 
+ 
   }
 
-  .logo-text {
-    margin:10px 100px 10px 10px;
+  .logo-content {
+    margin:10px 6% 10px 0;
 
     p {
       font-size: 18px;
@@ -49,15 +26,35 @@
       color:#5E4FC0;
       width:196px;
       height: 56px;
+
+      @media (max-width:$mobile) {
+        margin: auto;
+        margin-bottom: 56px;
+        width:311px;
+        height: 56px;
+      }
     }
   }
 
   .shop {
     margin: 10px 10px 100px;
 
-    img {
+    @media (max-width:$tablet) {
+      margin-bottom:0;
+      text-align: center;
+      @media (max-width:$mobile) {
+        
+      }
+    }
+    
+
+    .slide1__image {
       height: auto;
-      width: 100%
+      width: 100%;
+
+      @media (max-width:$mobileSmall) {
+        width: 65%;
+      }
     } 
   }
 }
