@@ -3,21 +3,22 @@
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     height: 100%;
+    padding-bottom: 57px;
   }
 }
 
-.slide1 .logo-content {
-  margin: 10px 6% 10px 0;
+.slide1__logo-content {
+  margin: 10px 6% 10px 4%;
 }
 
-.slide1 .logo-content p {
+.slide1__info {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.5px;
   margin: 18px 0 56px;
 }
 
-.slide1 .logo-content .logo-button {
+.slide1__logo-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,32 +38,32 @@
 }
 
 @media (max-width: 767px) {
-  .slide1 .logo-content .logo-button {
+  .slide1__logo-button {
     margin: auto;
-    margin-bottom: 56px;
+    margin-bottom: 10px;
     width: 311px;
     height: 56px;
   }
 }
 
-.slide1 .shop {
+.slide1__shop {
   margin: 10px 10px 100px;
 }
 
 @media (max-width: 1024px) {
-  .slide1 .shop {
+  .slide1__shop {
     margin-bottom: 0;
     text-align: center;
   }
 }
 
-.slide1 .shop .slide1__image {
+.slide1__slide1__image {
   height: auto;
   width: 100%;
 }
 
 @media (max-width: 500px) {
-  .slide1 .shop .slide1__image {
+  .slide1__slide1__image {
     width: 65%;
   }
 }
@@ -78,7 +79,7 @@
           flex-direction: column;
 }
 
-.slide2 .slide2__container {
+.slide2__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +87,7 @@
 }
 
 @media (max-width: 1199px) {
-  .slide2 .slide2__container {
+  .slide2__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -97,37 +98,28 @@
   }
 }
 
-.slide2 .slide2__container .slide2__top-content {
+.slide2__top-content {
   margin: 0 100px 120px 120px;
 }
 
 @media (max-width: 1199px) {
-  .slide2 .slide2__container .slide2__top-content {
+  .slide2__top-content {
     margin: 0;
     margin-left: -50px;
   }
 }
 
 @media (max-width: 1199px) and (max-width: 500px) {
-  .slide2 .slide2__container .slide2__top-content {
+  .slide2__top-content {
     margin-left: 10px;
   }
 }
 
-.slide2 .slide2__container .slide2__head {
+.slide2__head {
   padding-bottom: 32px;
 }
 
-@media (max-width: 1199px) {
-  .slide2 .revers {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-.slide2 .slide2__image-up {
+.slide2__image-up {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 100px;
@@ -135,50 +127,197 @@
 }
 
 @media (max-width: 1199px) {
-  .slide2 .slide2__image-up {
+  .slide2__image-up {
     padding: 0;
   }
 }
 
-.slide2 .slide2__image-up .image-up {
+.slide2__image-up .image-up {
   width: 100%;
 }
 
-.slide2 .slide2__image-bottom .image-bottom {
+.slide2__image-bottom .image-bottom {
   margin-right: 100px;
   margin-left: -100px;
   width: 100%;
 }
 
 @media (max-width: 1199px) {
-  .slide2 .slide2__image-bottom .image-bottom {
+  .slide2__image-bottom .image-bottom {
     margin: 0;
     margin-bottom: 40px;
     margin-top: 100px;
   }
 }
 
-.slide2 .slide2__info {
+.slide2__info {
   margin-bottom: 32px;
 }
 
-.slide2 .slide2__list {
+.slide2__list {
   margin-left: 20px;
 }
 
-.slide2 .slide2__list .slide2__item {
+.slide2__item {
   padding-bottom: 24px;
   padding-left: 24px;
   white-space: nowrap;
 }
 
-.slide2 .slide2__list .slide2__item span {
+.slide2__item span {
   color: #7C7E92;
+}
+
+@media (max-width: 1199px) {
+  .revers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.slide3 {
+  padding: 50px 50px 0;
+}
+
+@media (max-width: 1024px) {
+  .slide3 {
+    padding: 50px;
+  }
+}
+
+.slide3__container {
+  position: relative;
+  max-width: 1440px;
+}
+
+@media (max-width: 1024px) {
+  .slide3__container {
+    margin-left: -20%;
+  }
+}
+
+.slide3__step {
+  margin-bottom: -20px;
+}
+
+@media (max-width: 1024px) {
+  .slide3__step {
+    margin: 0;
+  }
+}
+
+.slide3__step-image {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .slide3__step-image {
+    display: none;
+  }
+}
+
+.slide3__list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .slide3__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.slide3__item {
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .slide3__item::before {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    counter-increment: list;
+    content: counter(list);
+    background: url(Image/Polygon.svg) center/contain no-repeat;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide3__item {
+    position: relative;
+    counter-increment: list 0;
+    padding-bottom: 48px;
+    padding-left: 60px;
+    left: 0;
+    top: 0;
+  }
+  .slide3__item:last-child {
+    padding-bottom: 0;
+    max-width: 226px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .slide3__item:first-child {
+    top: 45%;
+    left: 23%;
+  }
+  .slide3__item:nth-child(2) {
+    top: 34%;
+    left: 49%;
+  }
+  .slide3__item:last-child {
+    top: 20%;
+    left: 74%;
+    max-width: 226px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1024px) {
+  .slide3__item:last-child {
+    padding: 0;
+  }
+}
+
+.slide3__head {
+  padding-left: 18%;
+  padding-bottom: 14px;
+}
+
+@media (max-width: 1024px) {
+  .slide3__head {
+    display: none;
+  }
 }
 
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 body section {
@@ -216,6 +355,7 @@ body .back {
 }
 
 body h1 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 34px;
   line-height: 51px;

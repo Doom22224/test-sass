@@ -1,6 +1,8 @@
 @import "variables";
 @import "_slide1.scss";
 @import "_slide2.scss";
+@import "_slide3.scss";
+@import "_slide4.scss";
 
 * {
     padding:0;
@@ -10,25 +12,26 @@
 $bg:linear-gradient(90deg, #6A56CA 0%, #21268C 100%);
 
 body {
+  font-family: 'Montserrat', sans-serif;
 
   section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      max-width:100vw; 
-      padding:80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width:100vw; 
+    padding:80px 40px;
 
-      @media (max-width:$mobileSmall) {
-        padding: 40px 10px;
-      }
+    @media (max-width:$mobileSmall) {
+      padding: 40px 10px;
+    }
 
-      section:not(.back) {
-        color: #252849;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 0.5px;
-      }
+    section:not(.back) {
+      color: #252849;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+    }
   }
 
   
@@ -39,6 +42,7 @@ body {
   }
 
   h1 {
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 34px;
       line-height: 51px;

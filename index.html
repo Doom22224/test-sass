@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title> Test SASS </title>
     <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,12 +13,12 @@
     </header>
     <main>
         <section class="slide1 back">
-            <div class="logo-content">
+            <div class="slide1__logo-content">
                 <h1>Станьте официальным <br> дистрибьютером CITYLIFE</h1> 
-                <p> Развивайте свой бизнес <br> с тарифом Team</p>
-                <div class="logo-button">ПОДРОБНЕЕ</div>
+                <p class="slide1__info"> Развивайте свой бизнес <br> с тарифом Team</p>
+                <div class="slide1__logo-button">ПОДРОБНЕЕ</div>
             </div>
-            <div class="shop">
+            <div class="slide1__shop">
             <img class="slide1__image" src="Image/shop.svg" alt="shop">
             </div>
         </section>
@@ -51,7 +52,23 @@
               </div>
             </div>
         </section>
-        <section class="slide3 back"></section>
+        <section class="slide3 back">
+          <div class="slide3__container">
+            <h1 class="slide3__head">Подключайте новые торговые <br> точки — усиливайте свой бизнес</h1>
+            <div class="slide3__step">
+              <ul class="slide3__list">
+                <li class="slide3__item">Вы подключаете новые <br>
+                  торговые точки к CITYLIFE</li>
+                <li class="slide3__item">Клиенты торговых 
+                  точек <br> начинают пользоваться <br> нашим сервисом</li>
+                <li class="slide3__item">Вы получаете процент <br> от
+                  кэшбэка всех привлеченных пользователей </li>
+              </ul>
+        
+              <img class="slide3__step-image" src="Image/step1.2.3.svg">
+            </div>
+          </div>
+        </section>
         <section class="slide4"></section>
     </main>
 </body>

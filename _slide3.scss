@@ -1,0 +1,112 @@
+.slide3 {
+  padding: 50px 50px 0;
+
+    @media (max-width: $tablet) {
+      padding: 50px;
+    }
+  
+  &__container {
+    position: relative;
+    max-width: 1440px;
+    
+    @media (max-width: $tablet) {
+      margin-left: -20%;
+    }
+  }
+
+  &__step {
+    margin-bottom: -20px;
+
+    @media (max-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  &__step-image {
+    width: 100%;
+
+    @media (max-width: $tablet) {
+     display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: absolute;
+
+    &::before {
+
+      @media (max-width:  $tablet) {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        counter-increment: list;
+        content: counter(list);
+        background: url(Image/Polygon.svg) center/ contain no-repeat;
+      }
+    }
+
+    @media (max-width:$tablet) {
+      position: relative;
+      counter-increment: list 0;
+      padding-bottom: 48px;
+      padding-left: 60px;
+      left: 0;
+      top: 0;
+
+      &:last-child {
+        padding-bottom:0;
+        max-width: 226px;
+      }
+    }
+
+    @media (min-width: $tablet+1) {
+
+      &:first-child {
+      top:45%;
+      left: 23%;
+
+      }
+
+      &:nth-child(2) {
+        top:34%;
+        left: 49%;
+      }
+
+      &:last-child {
+        top:20%;
+        left: 74%;
+        max-width: 226px;
+        
+        @media (max-width:$tablet) {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  &__head {
+    padding-left: 18%;
+    padding-bottom: 14px;
+
+    @media (max-width: $tablet ) {
+      display: none;
+    }
+  }
+}
