@@ -209,6 +209,24 @@
     display: flex;
   }
 
+
+  .input {
+
+    &:checked {
+
+      & ~ .slide4__click {
+
+        &:hover {
+
+        }
+
+        &:before {
+
+        }
+      }
+    }
+  }
+
   input:checked+&__click:hover {
     background: none;
   }
