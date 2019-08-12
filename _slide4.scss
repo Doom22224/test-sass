@@ -209,6 +209,7 @@
     display: flex;
   }
 
+
   // &__click::before {
   //   content: '';
   //   position: absolute;
@@ -220,6 +221,27 @@
   //   border-radius: 2px;
     
   // }
+
+  .input {
+
+    &:checked {
+
+      & ~ .slide4__click {
+
+        &:hover {
+
+        }
+
+        &:before {
+
+        }
+      }
+    }
+  }
+
+  input:checked+&__click:hover {
+    background: none;
+  }
 
   input:checked+&__click::before{
     border: none;
