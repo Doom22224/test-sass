@@ -163,6 +163,7 @@
     bottom: 0;
     border: 1px solid #C2C3CC;
     border-radius: 2px;
+    
   }
 
   input:checked+&__click::before{
@@ -199,7 +200,7 @@
      @media (max-width: $tablet) {
        margin: auto;
        width: 310px;
-       
+
      }
   }
 
