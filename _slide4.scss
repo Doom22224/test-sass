@@ -31,7 +31,7 @@
       transform: scale(1.5);
     }
 
-    &:before {
+    &:before { 
       content: '';
       position: absolute;
       top: 0px;
@@ -187,7 +187,7 @@
     position: relative;
     min-width: 24px;
     height: 24px;
-    transition: background 150ms ease-in-out;
+    transition:  150ms ease-in-out;
 
     &:hover{
       background: rgba(93, 136, 252, 0.16);
@@ -209,21 +209,22 @@
     display: flex;
   }
 
-  &__click::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid #C2C3CC;
-    border-radius: 2px;
+  // &__click::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0px;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   border: 1px solid #C2C3CC;
+  //   border-radius: 2px;
     
-  }
+  // }
 
   input:checked+&__click::before{
     border: none;
     background: url(Image/body.svg) center/contain no-repeat;
+
   }
 
   &__item-agree {
