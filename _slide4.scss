@@ -209,16 +209,8 @@
     display: flex;
   }
 
-  &__click::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid #C2C3CC;
-    border-radius: 2px;
-    
+  input:checked+&__click:hover {
+    background: none;
   }
 
   input:checked+&__click::before{
