@@ -492,11 +492,11 @@ input:checked + .slide4__check-button::before {
   display: flex;
 }
 
-input:checked + .slide4__click:hover {
+.slide4__input-checkbox:checked ~ .slide4__click:hover {
   background: none;
 }
 
-input:checked + .slide4__click::before {
+.slide4__input-checkbox:checked ~ .slide4__click:before {
   border: none;
   background: url(Image/body.svg) center/contain no-repeat;
 }
